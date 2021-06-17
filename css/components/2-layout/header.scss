@@ -1,0 +1,12 @@
+.header {
+  &__inner {
+
+    padding: 20px 0;
+    &-logo {
+      width: 165px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

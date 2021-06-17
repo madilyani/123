@@ -1,0 +1,104 @@
+.footer {
+  padding: 35px 0;
+  background: #273583;
+  &__inner {
+    &-logo {
+      width: 165px;
+      position: relative;
+      padding-bottom: 32px;
+      img {
+        width: 100%;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -2px;
+        left: 0;
+        width: 38px;
+        height: 4px;
+        background: #fff;
+        transform: skew(-35deg);
+      }
+    }
+    &-title {
+      padding-top: 32px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 35px;
+      color: #ffffff;
+    }
+    &-subtitle {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      line-height: 130%;
+      color: #ffffff;
+      margin: 25px 0;
+
+      a {
+        color: #e06055;
+        font-weight: 700;
+      }
+    }
+  }
+  .form {
+    background: #fff;
+    padding: 0 20px;
+    &__inner {
+      &-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 120%;
+        color: #273583;
+      }
+    }
+    &__btn {
+      background: #e42313;
+      &:disabled {
+        color: #ffffff;
+      }
+    }
+    &__check {
+      label {
+        color: rgba($color: #273583, $alpha: 0.4);
+      }
+    }
+  }
+  .input__outer {
+    input {
+      color: #273583;
+      &::placeholder {
+        color: #273583;
+      }
+      &:-moz-placeholder {
+        color: #273583;
+      }
+      &:-ms-input-placeholder {
+        color: #273583;
+      }
+    }
+  }
+  &__copyright {
+    &-social {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 36px auto;
+    }
+    &-text {
+      padding-top: 30px;
+      border-top: 1px solid rgba($color: #fff, $alpha: 0.5);
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 148%;
+      color: rgba($color: #fff, $alpha: 0.5);
+    }
+  }
+}

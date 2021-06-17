@@ -1,0 +1,20 @@
+@import url("stylesheet.css");
+
+// 1-main components
+@import "./components/1-main/variables.scss";
+@import "./components/1-main/mixin.scss";
+@import "./components/1-main/nulifier.scss";
+
+// 2-layout components
+@import "./components/2-layout/upheader.scss";
+@import "./components/2-layout/header.scss";
+@import "./components/2-layout/form.scss";
+@import "./components/2-layout/input.scss";
+@import "./components/2-layout/list.scss";
+@import "./components/2-layout/footer.scss";
+
+// 3-page components
+@import "./components/3-page/index.scss";
+
+// responsive
+@import "./components/2-layout/responsive.scss";

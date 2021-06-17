@@ -1,0 +1,147 @@
+@include sm-md {
+  .hero {
+    &__inner {
+      padding-top: 50px;
+    }
+  }
+  .form {
+    &__inner {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  .footer .form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .map__under {
+    height: unset;
+    background: #273583;
+  }
+  .auto__container {
+    padding: 0 30px;
+  }
+}
+@include md-lg {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    &__card {
+      width: 50%;
+    }
+  }
+  .hero {
+    &__image {
+      img {
+        object-position: bottom center;
+      }
+    }
+  }
+  .form__inner-title {
+    text-align: center;
+  }
+  .footer {
+    &__inner {
+      &-logo {
+        margin: 0 auto;
+        &::after {
+          left: 50%;
+          @include transformX;
+        }
+      }
+      &-title {
+        text-align: center;
+      }
+      &-subtitle {
+        text-align: center;
+      }
+    }
+    &__copyright {
+      &-text {
+        text-align: center;
+      }
+    }
+  }
+}
+@include lg-xlg {
+  .hero {
+    overflow: hidden;
+    &__image {
+      img {
+        object-position: 20% 80%;
+      }
+    }
+    &::before {
+      height: 100%;
+      background: rgba($color: #000000, $alpha: 0.5);
+    }
+    &__inner {
+      padding-top: 200px;
+      width: 50%;
+      &-title {
+        color: #fff;
+      }
+      &-para {
+        color: #fff;
+      }
+    }
+    &__overlay {
+      width: 500px;
+      left: unset;
+      right: 0;
+    }
+  }
+  .about {
+    padding: 65px 0;
+    &__inner {
+      display: flex;
+      align-items: center;
+      margin: 0 -25px;
+      &-content {
+        width: calc(50% - 50px);
+        margin: 0 25px;
+        padding: 0;
+        &::after {
+          display: none;
+        }
+      }
+      &-number {
+        margin: 0 25px;
+        width: calc(50% - 50px);
+        padding: 0;
+        &-column {
+          width: calc(50% - 30px);
+          margin: 5px 15px;
+          &-num {
+            font-size: 42px;
+          }
+        }
+      }
+    }
+  }
+}
+@include xlg-xxlg {
+  .hero {
+    height: 750px;
+    &__image {
+      img {
+        &:first-child {
+          display: none;
+        }
+        &:last-child {
+          display: block;
+        }
+      }
+    }
+  }
+  .map__under {
+    img {
+      &:first-child {
+        display: none;
+      }
+      &:last-child {
+        display: block;
+      }
+    }
+  }
+}
