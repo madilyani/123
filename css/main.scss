@@ -1,4 +1,4 @@
-@import url("stylesheet.css");
+@import url("../fonts/stylesheet.css");
 
 // 1-main components
 @import "./components/1-main/variables.scss";
@@ -15,6 +15,7 @@
 
 // 3-page components
 @import "./components/3-page/index.scss";
+@import "./components/3-page/gdpr.scss";
 
 // responsive
 @import "./components/2-layout/responsive.scss";

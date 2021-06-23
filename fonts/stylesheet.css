@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Cy';
+    src: url('Cy-Black.eot');
+    src: url('Cy-Black.eot?#iefix') format('embedded-opentype'),
+        url('Cy-Black.woff') format('woff'),
+        url('Cy-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cy';
+    src: url('Cy-Bold.eot');
+    src: url('Cy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Cy-Bold.woff') format('woff'),
+        url('Cy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cy';
+    src: url('Cy-ExtraBold.eot');
+    src: url('Cy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Cy-ExtraBold.woff') format('woff'),
+        url('Cy-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cy';
+    src: url('Cy-ExtraLight.eot');
+    src: url('Cy-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Cy-ExtraLight.woff') format('woff'),
+        url('Cy-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cy';
+    src: url('Cy-Light.eot');
+    src: url('Cy-Light.eot?#iefix') format('embedded-opentype'),
+        url('Cy-Light.woff') format('woff'),
+        url('Cy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cy';
+    src: url('Cy-Regular.eot');
+    src: url('Cy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Cy-Regular.woff') format('woff'),
+        url('Cy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cy';
+    src: url('Cy-SemiBold.eot');
+    src: url('Cy-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Cy-SemiBold.woff') format('woff'),
+        url('Cy-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cy';
+    src: url('Cy-SemiLight.eot');
+    src: url('Cy-SemiLight.eot?#iefix') format('embedded-opentype'),
+        url('Cy-SemiLight.woff') format('woff'),
+        url('Cy-SemiLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cy';
+    src: url('Cy-Thin.eot');
+    src: url('Cy-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Cy-Thin.woff') format('woff'),
+        url('Cy-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

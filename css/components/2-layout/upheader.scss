@@ -1,5 +1,5 @@
 .upheader {
-  background: #273583;
+  background: #fff;
   &__inner {
     display: flex;
     align-items: center;
@@ -7,23 +7,24 @@
     padding: 8px 0;
     &-text {
       font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 1;
-      color: #ffffff;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: #3374ff;
     }
     &-tel {
       display: flex;
       align-items: center;
       svg {
         margin-right: 5px;
+        fill: #3374ff;
       }
       span {
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
         line-height: 1;
-        color: #ffffff;
+        color: #3374ff;
         text-align: right;
       }
     }

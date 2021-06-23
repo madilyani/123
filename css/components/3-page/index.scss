@@ -2,32 +2,6 @@
   height: 730px;
   position: relative;
   z-index: 1;
-  &__overlay {
-    position: absolute;
-    bottom: 20px;
-    content: "";
-    left: 0;
-    width: 75%;
-    opacity: 0.8;
-    z-index: 1;
-    img {
-      width: 100%;
-    }
-  }
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    content: "";
-    z-index: 1;
-    background: linear-gradient(
-      180deg,
-      #ffffff 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  }
   &__inner {
     position: relative;
     z-index: 1;
@@ -35,30 +9,54 @@
       font-style: normal;
       font-weight: bold;
       font-size: 36px;
-      line-height: 35px;
-      color: #273583;
-      padding-top: 20px;
+      line-height: 115%;
+      color: #ffffff;
+      font-family: $primary-font;
     }
     &-para {
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
       line-height: 140%;
-      color: #0d0d0d;
-      margin: 10px 0 36px 0;
+      color: #ffffff;
+      margin: 25px 0;
+      padding-left: 20px;
+      position: relative;
+      &::before {
+        width: 2px;
+        height: 55px;
+        left: 0;
+        top: 0;
+        background: #59e190;
+        position: absolute;
+        content: "";
+      }
     }
     &-btn {
-      display: block;
+      background: #3374ff;
+      padding: 10px 0;
+      text-align: center;
       max-width: 210px;
-      padding: 12px 0;
-      background: #e42313;
+      font-family: $primary-font;
       font-style: normal;
-      font-weight: bold;
-      font-size: 19px;
-      line-height: 1;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 21px;
       text-align: center;
       text-transform: uppercase;
       color: #ffffff;
+      display: block;
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: #ff8455;
+        content: "";
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
     }
   }
   &__image {
@@ -85,16 +83,15 @@
       font-weight: bold;
       font-size: 36px;
       line-height: 35px;
-      color: #273583;
+      color: #3374ff;
       margin-bottom: 35px;
     }
   }
   &__image {
     position: absolute;
     bottom: 60px;
-    width: 500px;
-    left: 50%;
-    @include transformX;
+    width: 340px;
+    right: -100px;
     img {
       width: 100%;
     }
@@ -102,7 +99,7 @@
 }
 .map {
   padding: 60px 0;
-  background: #273583;
+  background: #3374ff;
   &__inner {
     &-title {
       font-style: normal;
@@ -113,7 +110,7 @@
       color: #ffffff;
       margin-bottom: 40px;
       span {
-        font-weight: 500;
+        font-weight: 400;
       }
     }
     &-image {
@@ -126,51 +123,64 @@
   &__under {
     width: 100%;
     height: 305px;
+    position: relative;
     img {
       @include fullImage;
-      &:last-child {
+      &.pc {
         display: none;
+      }
+    }
+    &-overlay {
+      width: 130px;
+      height: 340px;
+      bottom: 20px;
+      left: 20px;
+      position: absolute;
+      z-index: 1;
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
   }
 }
 .about {
+  position: relative;
+  overflow: hidden;
+  &__image {
+    width: 320px;
+    right: -20px;
+    bottom: -40px;
+    position: absolute;
+    img {
+      width: 100%;
+    }
+  }
   &__inner {
     &-content {
       padding: 65px 0;
       position: relative;
-      &::after {
-        position: absolute;
-        content: "";
-        bottom: -4px;
-        left: 0;
-        width: 72px;
-        background: #273583;
-        /* blue */
-        border: 1px solid #273583;
-        box-sizing: border-box;
-        transform: skew(-15deg);
-        height: 8px;
-      }
       &-title {
         font-style: normal;
         font-weight: bold;
         font-size: 36px;
         line-height: 35px;
-        color: #e42313;
+        color: #ff8455;
+        font-family: $primary-font;
       }
       &-subtitle {
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
         line-height: 130%;
-        color: #202a6a;
+        color: #292929;
         margin: 22px 0 16px 0;
+        font-family: $primary-font;
       }
       ul {
         li {
           &::marker {
-            color: #e42313;
+            color: #ff8455;
           }
           list-style: disc;
           margin-left: 18px;
@@ -178,10 +188,7 @@
           font-weight: normal;
           font-size: 18px;
           line-height: 140%;
-          /* or 25px */
-
-          /* text black */
-          color: #0d0f56;
+          color: #636363;
         }
       }
     }
@@ -196,7 +203,7 @@
           font-weight: bold;
           font-size: 58px;
           line-height: 56px;
-          color: #e42313;
+          color: #59e190;
         }
         &-title {
           font-style: normal;
@@ -204,7 +211,7 @@
           font-size: 18px;
           line-height: 150%;
           text-transform: lowercase;
-          color: #0d0f56;
+          color: #636363;
         }
       }
     }
