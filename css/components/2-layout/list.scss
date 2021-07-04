@@ -2,52 +2,24 @@
   &__card {
     margin-bottom: 10px;
     &-header {
-      display: flex;
-      align-items: baseline;
-      &-num {
-        font-style: normal;
-        font-weight: 900;
-        font-size: 48px;
-        line-height: 46px;
-        color: #3374ff;
-        width: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 20px;
-        font-family: $primary-font;
-      }
       &-title {
         font-style: normal;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 1;
-        color: #3374ff;
-        font-family: $primary-font;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #3136a0;
+        margin-bottom: 20px;
       }
     }
     &-para {
-      padding-left: 59px;
-      position: relative;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
       line-height: 140%;
       color: #636363;
-      min-height: 125px;
       padding-bottom: 20px;
-      &::before {
-        position: absolute;
-        content: "";
-        width: 1px;
-        height: calc(100% - 10px);
-        background: #3374ff;
-        top: 10px;
-        left: 15px;
-      }
-    }
-    &:last-child .list__card-para::before {
-      display: none;
+      text-align: center;
     }
   }
 }
